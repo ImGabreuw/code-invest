@@ -1,7 +1,7 @@
 package entity
 
 type Order struct {
-	id            string
+	ID            string
 	Investor      *Investor
 	Asset         *Asset
 	Shares        int
@@ -14,7 +14,7 @@ type Order struct {
 
 func NewOrder(orderId string, investor *Investor, asset *Asset, shares int, price float64, orderType string) *Order {
 	return &Order{
-		id:            orderId,
+		ID:            orderId,
 		Investor:      investor,
 		Asset:         asset,
 		Shares:        shares,
